@@ -3,5 +3,6 @@ public class Main {
         System.out.println("amir tevet");
         int nimi;
         int ben;
+        int vaisgur;
     }
 }
