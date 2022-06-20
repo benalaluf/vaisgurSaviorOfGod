@@ -8,7 +8,7 @@ public class mission6 {
         int num = scn.nextInt();    //input number
         int odd = (num+1) % 2;
         int even = (num) % 2;
-        int symbol = odd+even;
+        int symbol = (2 * num + 1) % 2;
         int absNum = symbol*num;
 
 
