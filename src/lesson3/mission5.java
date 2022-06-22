@@ -8,10 +8,10 @@ public class mission5 {
         int num = 0;
         int lastnum = 0;
         int sum = 0;
-        double avg = 0;
-        double counter = 0.0;
         int biggerThenAvg = 0;
-
+        double counter = 0.0;
+        double avg =0;
+        double lastAvg;
 
         while (num >= 0) {
             for (int i = 0; i < 2; i++) {
@@ -24,9 +24,13 @@ public class mission5 {
                     break;
                 }
             }
+            lastAvg = avg;
             avg = sum / counter;
             if (lastnum > avg) {
                 biggerThenAvg++;
+            }
+            if (lastnum>avg&&lastAvg < avg){
+                biggerThenAvg =1;
             }
         }
         avg = sum / counter;
